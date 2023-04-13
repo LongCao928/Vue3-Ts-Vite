@@ -20,7 +20,7 @@ TypeScript 无法默认情况下处理 `.vue` 导入的输入信息，
 
 查看 [Vite Configuration Reference](https://vitejs.dev/config/).
 
-## 项目设置
+## 依赖安装
 
 ```sh
 npm install
