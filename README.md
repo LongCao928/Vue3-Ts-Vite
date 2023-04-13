@@ -62,7 +62,7 @@ npm run lint
 ├─ .package-lock.json // 安装的依赖包指定版本(node_modules 快照)
 └─ src
    │─ App.vue // 根容器
-   │─ main.js
+   │─ main.ts
    │─ style.css 样式文件
    ├─ components // 组件
    ├─ assets // 静态资源
