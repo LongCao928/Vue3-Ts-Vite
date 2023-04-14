@@ -1,5 +1,19 @@
+<script setup lang="ts">
+  // const emits = defineEmits(['some-event', 'update'])
+
+  const emits = defineEmits<{
+    (e: 'some-event', event: MouseEvent, name: string): void
+    (e: 'update', name: string): void
+  }>()
+
+  function handleClick(event: MouseEvent, name: string) {
+    emits('some-event', event, name)
+  }
+</script>
+
 <template>
-  <div class="item">
+  <!-- <div class="item" @click="$emit('someEvent', $event)"> -->
+  <div class="item" @click="handleClick($event, 'click')">
     <i>
       <slot name="icon"></slot>
     </i>

@@ -11,5 +11,9 @@ module.exports = {
   ],
   parserOptions: {
     ecmaVersion: 'latest'
-  }
+  },
+  globals: {
+    Tany: true
+  },
+  env: {}
 }

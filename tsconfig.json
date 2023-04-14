@@ -1,13 +1,18 @@
 {
+  // 指定要继承的配置选项
   "extends": "@vue/tsconfig/tsconfig.web.json",
+  // 指定被编译文件所在的目录
   "include": ["env.d.ts", "src/**/*", "src/**/*.vue"],
+  // 项目选项
   "compilerOptions": {
+    // 用于解析非绝对模块名的基本路径，相对模块不受影响
     "baseUrl": ".",
+    // 用于设置模块名称基于baseUrl的路径映射关系
     "paths": {
       "@/*": ["./src/*"]
     }
   },
-
+  // 项目引用，它允许将 ts 程序组织成更小的部分。
   "references": [
     {
       "path": "./tsconfig.node.json"

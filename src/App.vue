@@ -1,6 +1,11 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
+console.log(import.meta.env.VITE_APP_NAME)
+
+let s: Tany = '123'
+console.log(s)
+
 </script>
 
 <template>

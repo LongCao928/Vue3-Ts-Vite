@@ -1,8 +1,11 @@
 {
+  // 继承
   "extends": "@vue/tsconfig/tsconfig.node.json",
   "include": ["vite.config.*", "vitest.config.*", "cypress.config.*", "playwright.config.*"],
   "compilerOptions": {
+    // 是否开启项目编译
     "composite": true,
+    // 用来指定需要包含的模块，并将其包含在全局范围内。
     "types": ["node"]
   }
 }
