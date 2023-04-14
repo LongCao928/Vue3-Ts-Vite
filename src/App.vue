@@ -1,15 +1,27 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
+import { ref, watch } from 'vue'
+import { RouterLink, RouterView, useRouter } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
 console.log(import.meta.env.VITE_APP_NAME)
 
 let s: Tany = '123'
 console.log(s)
 
+const Router = useRouter()
+let showLeft = ref(false)
+
+watch(
+  () => Router.currentRoute.value,
+  newValue => {
+    newValue.meta.showLeft ? showLeft.value = true : showLeft.value = false
+  },
+  { immediate: true, deep: true }
+)
+
 </script>
 
 <template>
-  <header>
+  <header v-if="showLeft">
     <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
 
     <div class="wrapper">
