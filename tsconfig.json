@@ -10,7 +10,8 @@
     // 用于设置模块名称基于baseUrl的路径映射关系
     "paths": {
       "@/*": ["./src/*"]
-    }
+    },
+    // "preserveValueImports": false
   },
   // 项目引用，它允许将 ts 程序组织成更小的部分。
   "references": [
