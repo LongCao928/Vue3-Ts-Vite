@@ -63,12 +63,11 @@ npm run lint
 └─ src
    │─ App.vue // 根容器
    │─ main.ts
-   │─ style.css 样式文件
    ├─ components // 组件
    ├─ assets // 静态资源
-   ├─ pages // 页面
+   ├─ views // 页面
    ├─ router // 路由
-   ├─ store // pinia 状态
+   ├─ stores // pinia 状态
    ├─ servers // 服务
    ├─ utils // 公用方法
 ```

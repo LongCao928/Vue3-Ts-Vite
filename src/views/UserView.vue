@@ -1,9 +1,13 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="user">
+  <!-- <div class="user">
     <span>user</span>
-  </div>
+  </div> -->
+    <el-card class="card">
+      <template #header>User</template>
+      <el-text size="large" type="primary">This is content...</el-text>
+    </el-card>
 </template>
 
 <style lang="scss" scoped>
@@ -16,5 +20,8 @@
       left: 0;
       top: 0;
     }
+  }
+  .card {
+    width: 200px;
   }
 </style>

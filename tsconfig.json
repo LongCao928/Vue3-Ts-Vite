@@ -11,7 +11,9 @@
     "paths": {
       "@/*": ["./src/*"]
     },
-    // "preserveValueImports": false
+    // "preserveValueImports": false,
+    // 用来指定需要包含的模块，并将其包含在全局范围内。
+    "types": ["element-plus/global"], 
   },
   // 项目引用，它允许将 ts 程序组织成更小的部分。
   "references": [
