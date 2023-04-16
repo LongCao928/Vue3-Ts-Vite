@@ -47,15 +47,15 @@ npm run lint
 ### 目录
 
 ```
-├─ env.d.ts // ts
-├─ tsconfig.json // ts配置
+├─ xxx.d.ts // ts 环境变量配置
+├─ tsconfig.json // ts 全局配置
 ├─ tsconfig.node.json // ts配置
 ├─ .vscode // vscode 配置文件
 ├─ public // 根目录静态资源(/访问)
 ├─ .env.xxx // 各环境的配置文件
 ├─ vite.config.ts // 项目配置
 ├─ index.html // 入口文件
-├─ .__ignore // 配置忽略文件
+├─ .gitignore // 配置 git 提交忽略文件
 ├─ .eslintrc.cjs // eslint 配置
 ├─ .prettierrc.json // prettier 配置
 ├─ .package.json // 项目配置文件
