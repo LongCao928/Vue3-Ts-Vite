@@ -6,5 +6,13 @@ export default [
     meta: {
       title: 'user'
     }
-  }
+  },
+  {
+    path: '/axios',
+    name: 'axios',
+    component: () => import('@/views/UseAxios.vue'),
+    meta: {
+      title: 'useAxios'
+    }
+  },
 ]
