@@ -3,11 +3,11 @@ import R from '@/utils/request'
 import Module from '@/config/module'
 
 export default {
-  getUserInfo(name: string) {
-    return R.get(Module.User, '/getInfo', { id: name })
+  getUserInfo(number: TAny) {
+    return R.get(Module.User, '/comments', { postId: number })
   },
   setUserInfo(data: {}) {
-    return R.post(Module.User, 'setInfo', {
+    return R.post(Module.User, '/posts', {
       ...data
     })
   }

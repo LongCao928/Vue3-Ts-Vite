@@ -13,7 +13,8 @@ module.exports = {
     ecmaVersion: 'latest'
   },
   globals: {
-    Tany: true
+    TAny: true,
+    TAnyType: true
   },
   env: {}
 }
