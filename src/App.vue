@@ -4,7 +4,7 @@ import { RouterLink, RouterView, useRouter } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
 console.log(import.meta.env.VITE_APP_NAME)
 
-let s: Tany = '123'
+let s: TAny = '123'
 console.log(s)
 
 const Router = useRouter()

@@ -32,3 +32,12 @@ declare type TDictArray<T> = Array<T>
 // 任意函数
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 declare type TAnyFunc = (...args: any[]) => any
+
+
+declare module "*.vue" {
+  import type { DefineComponent } from "vue";
+  const vueComponent: DefineComponent<{}, {}, any>;
+  export default vueComponent;
+}
+
+declare module 'element-plus/dist/locale/zh-cn.mjs'
