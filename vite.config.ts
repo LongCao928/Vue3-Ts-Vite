@@ -12,17 +12,21 @@ import externalGlobals from 'rollup-plugin-external-globals'
 
 const cdn = {
   cssCdn: [
-    'https://unpkg.com/element-plus@2.3.3/dist/index.css'
+    'https://unpkg.com/element-plus@2.3.3/dist/index.css',
+    // 'https://unpkg.com/nprogress@0.2.0/nprogress.css',
   ],
   jsCdn: [
     'https://unpkg.com/vue@3.2.47/dist/vue.global.prod.js',
     'https://unpkg.com/vue-demi@0.14.0/lib/index.iife.js', // 开发同时支持Vue2和3的通用的Vue库的开发工具,而无需担心用户安装的版本
-    'https://unpkg.com/axios@1.3.5/dist/axios.min.js',
+    // 'https://unpkg.com/axios@1.3.5/dist/axios.min.js',
+    'https://unpkg.com/axios/dist/axios.min.js',
+    // 'https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js',
     'https://unpkg.com/vue-router@4.1.6/dist/vue-router.global.prod.js',
     'https://unpkg.com/pinia@2.0.32/dist/pinia.iife.prod.js',
     'https://unpkg.com/element-plus@2.3.3/dist/index.full.min.js',
     // 'https://unpkg.com/qrcodejs2@0.0.2/qrcode.min.js', // js生成二维码
     // 'https://unpkg.com/dplayer@1.26.0/dist/DPlayer.min.js', // 弹幕视频播放器
+    // 'https://unpkg.com/nprogress@0.2.0/nprogress.js'
   ]
 }
 
