@@ -16,6 +16,12 @@ axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded
 // git rebase -i HEAD~3 合并之前的三次提交
 // git push -f 强推
 
+// git reset --soft HEAD~1
+// 撤销gitcommit，不撤销git add，保留编辑器改动代码
+
+// git commit --amend 
+// 进入vim编辑模式，修改提交注释
+
 declare module 'axios' {
   export interface AxiosRequestConfig {
     module?: string
