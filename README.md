@@ -1,13 +1,22 @@
 <div align="center">
    
-[![vue](https://img.shields.io/badge/3.2.47-vue-green)](https://cn.vuejs.org/guide/introduction.html)
-   <br /> 
-   
-[![vite](https://img.shields.io/badge/4.1.4-vite-orange)](https://cn.vitejs.dev/guide/)
-[![pinia](https://img.shields.io/badge/2.0.32-pinia-lightgrey)](https://pinia.vuejs.org/zh/)
-[![vue-router](https://img.shields.io/badge/4.1.6-vue%20router-brightgreen)](https://router.vuejs.org/zh/)
-[![element-plus](https://img.shields.io/badge/2.3.3-element--plus-ff69b4)](https://element-plus.org/zh-CN/guide/design.html)
-[![axios](https://img.shields.io/badge/1.3.5-axios-blueviolet)](https://www.axios-http.cn/docs/intro)
+   [![vue](https://img.shields.io/badge/3.2.47-vue-brightgreen)](https://cn.vuejs.org/guide/introduction.html)
+   [![vue-router](https://img.shields.io/badge/4.1.6-vue%20router-yellow)](https://router.vuejs.org/zh/)
+   [![pinia](https://img.shields.io/badge/2.0.32-pinia-lightgrey)](https://pinia.vuejs.org/zh/)
+   [![vite](https://img.shields.io/badge/4.1.4-vite-orange)](https://cn.vitejs.dev/guide/)
+   [![axios](https://img.shields.io/badge/1.3.5-axios-blueviolet)](https://www.axios-http.cn/docs/intro)
+   [![element-plus](https://img.shields.io/badge/2.3.3-element--plus-ff69b4)](https://element-plus.org/zh-CN/guide/design.html)
+
+   <br />
+
+   [![typescript](https://img.shields.io/badge/4.8.4-typescript-blue)]()
+   [![eslint](https://img.shields.io/badge/8.34.0-eslint-red)]()
+   [![prettier](https://img.shields.io/badge/2.8.4-prettier-orange)]()
+   [![sass](https://img.shields.io/badge/1.62.0-sass-ff69b4)]()
+   [![qs](https://img.shields.io/badge/6.11.1-qs-blueviolet)]()
+   [![husky](https://img.shields.io/badge/8.0.3-husky-lightgrey)]()
+   [![lint-staged](https://img.shields.io/badge/13.2.1-lint--staged-yellow)]()
+   [![vue-tsc](https://img.shields.io/badge/1.2.0-vue--tsc-brightgreen)]()
    
 </div>
 
