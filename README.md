@@ -25,9 +25,9 @@ TypeScript 无法默认情况下处理 `.vue` 导入的输入信息，
 ```bash
 # 配置
 1. 安装 eslint 插件
-2. 安装 volar 插件
-3. node v16.x
-4. pnpm v6.x
+2. 安装 prettier 插件
+3. node v18.15.x
+4. npm v9.5.x
 
 ## 依赖安装
 
