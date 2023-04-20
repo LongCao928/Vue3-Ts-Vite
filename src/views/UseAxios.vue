@@ -1,5 +1,5 @@
 
-<template>
+<template >
   <template v-if="data.resData.length">
     <div class="wrap-json" v-for="item in data.resData"
       :key="item.id">
@@ -15,11 +15,11 @@
 
 <script setup lang="ts">
 import { onMounted, reactive, nextTick } from 'vue'
-import { ElLoading } from 'element-plus'
+// import { ElLoading } from 'element-plus'
 import AxiosServer from '@/servers/useAxios'
+import loading from '@/utils/loading'
 
-let loading
-const testaaa
+// let loading
 
 const data = reactive({
   resData: [] as Array<TAny>,
@@ -27,11 +27,12 @@ const data = reactive({
 })
 
 async function getUserInfo() {
-    loading = ElLoading.service({
+    /* loading = ElLoading.service({
       fullscreen: true,
       body: true,
       lock: true,
-    })
+    }) */
+  loading.show()
   let res = await AxiosServer.getUserInfo(1)
   data.resData = res.data
   /* let response = await AxiosServer.setUserInfo({
@@ -41,7 +42,7 @@ async function getUserInfo() {
   })
   data.resPostData = response.data */
   // console.log(response)
-  loading.close()
+  loading.hide()
 }
 
 onMounted(() => {

@@ -6,6 +6,8 @@ import {
 
 import type { RouteLocationNormalized, RouteLocationNormalizedLoaded, RouteRecordRaw } from 'vue-router'
 
+import loading from '@/utils/loading'
+
 
 // import Token from '@/services/token'
 
@@ -85,6 +87,7 @@ const routerInstance = createRouter({
 })
 
 routerInstance.beforeEach((to, _, next) => {
+  loading.show()
   if (to.meta) {
     document.title = to.meta.title ? `${to.meta.title}` : 'Vite App'
   }
@@ -95,6 +98,10 @@ routerInstance.beforeEach((to, _, next) => {
     next()
   } */
   next()
+})
+
+routerInstance.afterEach(() => {
+  loading.hide()
 })
 
 export default routerInstance
