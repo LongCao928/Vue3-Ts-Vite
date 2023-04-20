@@ -1,3 +1,16 @@
+<div align="center">
+   
+[![vue](https://img.shields.io/badge/3.2.47-vue-green)](https://cn.vuejs.org/guide/introduction.html)
+   <br /> 
+   
+[![vite](https://img.shields.io/badge/4.1.4-vite-orange)](https://cn.vitejs.dev/guide/)
+[![pinia](https://img.shields.io/badge/2.0.32-pinia-lightgrey)](https://pinia.vuejs.org/zh/)
+[![vue-router](https://img.shields.io/badge/4.1.6-vue%20router-brightgreen)](https://router.vuejs.org/zh/)
+[![element-plus](https://img.shields.io/badge/2.3.3-element--plus-ff69b4)](https://element-plus.org/zh-CN/guide/design.html)
+[![axios](https://img.shields.io/badge/1.3.5-axios-blueviolet)](https://www.axios-http.cn/docs/intro)
+   
+</div>
+
 # Vue3+Ts+Vite 开发基础模板
 
 ## 推荐 IDE 设置
