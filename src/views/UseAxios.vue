@@ -15,23 +15,38 @@
 
 <script setup lang="ts">
 import { onMounted, reactive, nextTick } from 'vue'
+import { ElLoading } from 'element-plus'
 import AxiosServer from '@/servers/useAxios'
+
+let loading
+const test
 
 const data = reactive({
   resData: [] as Array<TAny>,
   resPostData: {} as TAnyType
 })
 
-onMounted(async () => {
-  // let res = await AxiosServer.getUserInfo(1)
-  // data.resData = res.data
-  let res = await AxiosServer.setUserInfo({
+async function getUserInfo() {
+    loading = ElLoading.service({
+      fullscreen: true,
+      body: true,
+      lock: true,
+    })
+  let res = await AxiosServer.getUserInfo(1)
+  data.resData = res.data
+  /* let response = await AxiosServer.setUserInfo({
     title: 'foo',
     body: 'bar',
     userId: 1,
   })
-  console.log(res)
-  data.resPostData = res.data
+  data.resPostData = response.data */
+  // console.log(response)
+  loading.close()
+}
+
+onMounted(() => {
+  console.log('onMounted')
+  getUserInfo()
   nextTick(() => {
     console.log('nextTick')
   })
