@@ -87,10 +87,10 @@ npm run lint
 ├─ vite.config.ts // 项目配置
 ├─ index.html // 入口文件
 ├─ .gitignore // 配置 git 提交忽略文件
-├─ .eslintrc.cjs // eslint 配置
-├─ .prettierrc.json // prettier 配置
-├─ .package.json // 项目配置文件
-├─ .package-lock.json // 安装的依赖包指定版本(node_modules 快照)
+├─ eslintrc.cjs // eslint 配置
+├─ prettierrc.json // prettier 配置
+├─ package.json // 项目配置文件
+├─ package-lock.json // 安装的依赖包指定版本(node_modules 快照)
 └─ src
    │─ App.vue // 根容器
    │─ main.ts
